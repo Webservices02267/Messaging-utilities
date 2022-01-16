@@ -1,6 +1,7 @@
 package messaging;
 
 import java.io.Serializable;
+import java.rmi.server.ObjID;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,6 +23,7 @@ public class Event implements Serializable {
 	
 	public Event(String type) {
 		this.type = type;
+		this.arguments = new Object[] { "" };
 	}
 
 	public String getType() {
