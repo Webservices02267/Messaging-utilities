@@ -1,4 +1,5 @@
 package messaging;
+import com.google.gson.Gson;
 
 public class EventResponse {
 
