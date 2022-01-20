@@ -20,8 +20,8 @@ public class GLOBAL_STRINGS {
 
             public static final String TOKEN_STATUS_REQUESTED = "TokenStatusRequested";
             public static final String CUSTOMER_VERIFICATION_REQUESTED = "CustomerVerificationRequested";
-            public static final String TOKEN_VERIFICATION_REQUESTED = PAYMENT_SERVICE.PUBLISH.GET_CUSTOMER_ID_FROM_TOKEN_REQUESTED;
-            public static final String TOKEN_VERIFICATION_RESPONDED = PAYMENT_SERVICE.HANDLE.GET_CUSTOMER_ID_FROM_TOKEN_RESPONDED;
+            public static final String GET_CUSTOMER_ID_FROM_TOKEN_REQUESTED = PAYMENT_SERVICE.PUBLISH.GET_CUSTOMER_ID_FROM_TOKEN_REQUESTED;
+            public static final String GET_CUSTOMER_ID_FROM_TOKEN_RESPONDED = PAYMENT_SERVICE.HANDLE.GET_CUSTOMER_ID_FROM_TOKEN_RESPONDED;
             public static final String TOKEN_CREATION_REQUESTED = "TokenCreationRequested";
 
 
