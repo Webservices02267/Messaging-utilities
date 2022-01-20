@@ -119,7 +119,7 @@ public class GLOBAL_STRINGS {
 
 
         public static class PUBLISH {
-            public static final String REST_STATUS_RESPINDED = "ReportStatusResponded.";
+            public static final String REST_STATUS_RESPONDED = "ReportStatusResponded.";
             public static final String REPORT_CUSTOMER_RESPONDED = "ReportCustomerResponded.";
             public static final String REPORT_MERCHANT_RESPONDED = "ReportMerchantResponded.";
             public static final String REPORT_MANAGER_RESPONDED = "ReportManagerResponded.";
