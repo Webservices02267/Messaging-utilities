@@ -15,7 +15,6 @@ import messaging.MessageQueue;
 
 public class RabbitMqQueue implements MessageQueue {
 
-	private static final String TOPIC = "events";
 	private static final String DEFAULT_HOSTNAME = "rabbitMq";
 	private static final String EXCHANGE_NAME = "eventsExchange";
 	private static final String QUEUE_TYPE = "topic";
@@ -45,7 +44,7 @@ public class RabbitMqQueue implements MessageQueue {
 		String message = new Gson().toJson(event);
 		System.out.println("[x] Publish event " + message);
 		try {
-			channel.basicPublish(EXCHANGE_NAME, TOPIC, null, message.getBytes("UTF-8"));
+			channel.basicPublish(EXCHANGE_NAME, event.getType(), null, message.getBytes("UTF-8"));
 		} catch (IOException e) {
 			throw new Error(e);
 		}
@@ -67,11 +66,11 @@ public class RabbitMqQueue implements MessageQueue {
 	}
 
 	@Override
-	public void addHandler(String eventType, Consumer<Event> handler) {
-		System.out.println("[x] handler "+handler+" for event type " + eventType + " installed");
+	public void addHandler(String topic, Consumer<Event> handler) {
+		System.out.println("[x] handler " + handler + " added for event topic: " + topic);
 		try {
 			String queueName = channel.queueDeclare().getQueue();
-			channel.queueBind(queueName, EXCHANGE_NAME, TOPIC);
+			channel.queueBind(queueName, EXCHANGE_NAME, topic);
 
 			DeliverCallback deliverCallback = (consumerTag, delivery) -> {
 				String message = new String(delivery.getBody(), "UTF-8");
@@ -80,7 +79,7 @@ public class RabbitMqQueue implements MessageQueue {
 
 				Event event = new Gson().fromJson(message, Event.class);
 				
-				if (eventType.equals(event.getType())) {
+				if (topic.equals(event.getType())) {
 					handler.accept(event);
 				}
 			};
