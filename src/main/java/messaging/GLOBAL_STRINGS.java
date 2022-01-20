@@ -11,38 +11,42 @@ public class GLOBAL_STRINGS {
     public static class TOKEN_SERVICE{
 
         public static class OK_STRINGS{
-            public static final String SANITITY_CHECK = "Sanitity check for account service";
+            public static final String SANITY_CHECK = "Sanity check for account service";
 
         }
 
         public static class HANDLE {
 
-            public static final String CUSTOMER_VERIFICATION_REQUESTED = "CustomerVerificationRequest";
-            public static final String TOKEN_VERIFICATION_REQUESTED = "TokenVerificationRequested";
-            public static final String TOKEN_STATUS_REQUEST = "TokenStatusRequest";
-            public static final String TOKEN_CREATION_REQUEST = "TokenCreationRequest";
-            public static final String TOKEN_VERIFICATION_RESPONSE = "TokenVerificationResponse";
+            public static final String TOKEN_STATUS_REQUESTED = "TokenStatusRequested.";
+            public static final String CUSTOMER_VERIFICATION_REQUESTED = "CustomerVerificationRequested.";
+            public static final String TOKEN_VERIFICATION_REQUESTED = PAYMENT_SERVICE.PUBLISH.GET_CUSTOMER_ID_FROM_TOKEN_REQUESTED;
+            public static final String TOKEN_VERIFICATION_RESPONDED = PAYMENT_SERVICE.HANDLE.GET_CUSTOMER_ID_FROM_TOKEN_RESPONDED;
+            public static final String TOKEN_CREATION_REQUESTED = "TokenCreationRequested.";
+
+            public static final String ACCOUNT_VERIFICATION_RESPONDED= ACCOUNT_SERVICE.PUBLISH.ACCOUNT_VERIFICATION_RESPONDED;
+            public static final String ACCOUNT_VERIFICATION_REQUESTED= ACCOUNT_SERVICE.HANDLE.ACCOUNT_VERIFICATION_REQUESTED;
 
 
         }
 
         public static class PUBLISH {
-            public static final String ACCOUNT_STATUS_RESPONSE = "AccountStatusResponse";
-            public static final String CUSTOMER_CREATION_RESPONSE = "CustomerCreationResponse";
-            public static final String MERCHANT_CREATION_RESPONSE = "MerchantCreationResponse";
-            public static final String CUSTOMER_VERIFICATION_RESPONSE = "CustomerVerificationResponse";
-            public static final String MERCHANT_VERIFICATION_RESPONSE = "MerchantVerificationResponse";
-            public static final String RESPONSE_CUSTOMER = "ResponseCustomer";
-            public static final String RESPONSE_MERCHANT = "ResponseMerchant";
-            public static final String MERCHANT_TO_ACCOUNT_NUMBER_RESPONSE = PAYMENT_SERVICE.HANDLE.MERCHANT_TO_ACCOUNT_NUMBER_RESPONSE;
-            public static final String CUSTOMER_TO_ACCOUNT_NUMBER_RESPONSE = PAYMENT_SERVICE.HANDLE.CUSTOMER_TO_ACCOUNT_NUMBER_RESPONSE;
+            public static final String TOKEN_CREATION_RESPONDED = "TokenCreationResponded.";
+            public static final String TOKEN_STATUS_RESPONDED = "TokenStatusResponded.";
+            public static final String CUSTOMER_CREATION_RESPONDED = "CustomerCreationResponded.";
+            public static final String MERCHANT_CREATION_RESPONDED = "MerchantCreationResponded.";
+            public static final String CUSTOMER_VERIFICATION_RESPONDED = "CustomerVerificationResponded.";
+            public static final String MERCHANT_VERIFICATION_RESPONDED = "MerchantVerificationResponded.";
+            public static final String MERCHANT_TO_ACCOUNT_NUMBER_RESPONDED = PAYMENT_SERVICE.HANDLE.MERCHANT_TO_ACCOUNT_NUMBER_RESPONDED;
+            public static final String CUSTOMER_TO_ACCOUNT_NUMBER_RESPONDED = PAYMENT_SERVICE.HANDLE.CUSTOMER_TO_ACCOUNT_NUMBER_RESPONDED;
+            public static final String CUSTOMER_RESPONDED = "CustomerResponded.";
+            public static final String MERCHANT_RESPONDED = "MerchantResponded.";
 
 
         }
         public static class ERROR_STRINGS{
 
-            public static final String AN_ERROR_HAS_OCCURED_COULD_NOT_CREATE_MERCHANT = "AN ERROR HAS OCCURED - COULD NOT CREATE MERCHANT";
-            public static final String AN_ERROR_HAS_OCCURED_COULD_NOT_CREATE_CUSTOMER = "AN ERROR HAS OCCURED - COULD NOT CREATE CUSTOMER";
+            public static final String AN_ERROR_HAS_OCCURRED_COULD_NOT_CREATE_MERCHANT = "AN ERROR HAS OCCURRED - COULD NOT CREATE MERCHANT";
+            public static final String AN_ERROR_HAS_OCCURRED_COULD_NOT_CREATE_CUSTOMER = "AN ERROR HAS OCCURRED - COULD NOT CREATE CUSTOMER";
 
             public static final String NO_MERCHANT_EXISTS_WITH_THE_PROVIDED_ID = "No merchant exists with the provided id";
             public static final String NO_CUSTOMER_EXISTS_WITH_THE_PROVIDED_ID = "No customer exists with the provided id";
@@ -53,24 +57,24 @@ public class GLOBAL_STRINGS {
     public static class PAYMENT_SERVICE{
 
         public static class OK_STRINGS{
-            public static final String SANITITY_CHECK = "Sanitity check for payment service";
+            public static final String SANITY_CHECK = "Sanity check for payment service";
         }
 
 
         public static class HANDLE {
-            public static final String PAYMENT_STATUS_REQUEST = "PaymentStatusRequest";
-            public static final String PAYMENT_REQUEST = "PaymentRequest";
-            public static final String MERCHANT_TO_ACCOUNT_NUMBER_RESPONSE = "MerchantIdToAccountNumberResponse";
-            public static final String GET_CUSTOMER_ID_FROM_TOKEN_RESPONSE = "GetCustomerIdFromTokenResponse";
-            public static final String CUSTOMER_TO_ACCOUNT_NUMBER_RESPONSE = "CustomerIdToAccountNumberResponse";
+            public static final String PAYMENT_STATUS_REQUESTED = "PaymentStatusRequested.";
+            public static final String PAYMENT_REQUESTED = "PaymentRequested.";
+            public static final String MERCHANT_TO_ACCOUNT_NUMBER_RESPONDED = "MerchantIdToAccountNumberResponded.";
+            public static final String GET_CUSTOMER_ID_FROM_TOKEN_RESPONDED = "GetCustomerIdFromTokenResponded.";
+            public static final String CUSTOMER_TO_ACCOUNT_NUMBER_RESPONDED = "CustomerIdToAccountNumberResponded.";
         }
 
         public static class PUBLISH {
-            public static final String PAYMENT_STATUS_RESPONSE = "PaymentStatusResponse";
-            public static final String MERCHANT_ID_TO_ACCOUNT_NUMBER_REQUEST = "MerchantIdToAccountNumberRequest";
-            public static final String GET_CUSTOMER_ID_FROM_TOKEN_REQUEST = "GetCustomerIdFromTokenRequest";
-            public static final String CUSTOMER_ID_TO_ACCOUNT_NUMBER_REQUEST = "CustomerIdToAccountNumberRequest";
-            public static final String PAYMENT_RESPONSE = "PaymentResponse";
+            public static final String PAYMENT_STATUS_RESPONDED = "PaymentStatusResponded.";
+            public static final String MERCHANT_ID_TO_ACCOUNT_NUMBER_REQUESTED = "MerchantIdToAccountNumberRequested.";
+            public static final String GET_CUSTOMER_ID_FROM_TOKEN_REQUESTED = "GetCustomerIdFromTokenRequested.";
+            public static final String CUSTOMER_ID_TO_ACCOUNT_NUMBER_REQUESTED = "CustomerIdToAccountNumberRequested.";
+            public static final String PAYMENT_RESPONDED = "PaymentResponded.";
         }
 
 
@@ -95,27 +99,32 @@ public class GLOBAL_STRINGS {
     public static class REPORT_SERVICE{
 
         public static class OK_STRINGS{
-            public static final String SANITITY_CHECK = "Sanitity check for report service";
+            public static final String SANITY_CHECK = "Sanity check for report service";
         }
 
 
         public static class HANDLE {
-            public static final String CUSTOMER_REPORT_REQUEST = "CustomerReportRequest";
-            public static final String MERCHANT_REPORT_REQUEST = "MerchantReportRequest";
-            public static final String MANAGER_REPORT_REQUEST = "ManagerReportRequest";
-            public static final String LOG_PAYMENT_REQUEST = "LogPaymentRequest";
+            public static final String REST_STATUS_REQUESTED = "ReportStatusRequested.";
+            public static final String REPORT_CUSTOMER_REQUESTED = "ReportCustomerRequested.";
+            public static final String REPORT_MERCHANT_REQUESTED = "ReportMerchantRequested.";
+            public static final String REPORT_MANAGER_REQUESTED = "ReportManagerRequested.";
+            public static final String LOG_PAYMENT_REQUESTED = "LogPaymentRequested.";
+
+
+
         }
 
 
         public static class PUBLISH {
-            public static final String CUSTOMER_REPORT_RESPONSE = "CustomerReportResponse";
-            public static final String MERCHANT_REPORT_RESPONSE = "MerchantReportResponse";
-            public static final String MANAGER_REPORT_RESPONSE = "ManagerReportResponse";
+
+            public static final String REPORT_CUSTOMER_RESPONDED = "ReportCustomerResponded.";
+            public static final String REPORT_MERCHANT_RESPONDED = "ReportMerchantResponded.";
+            public static final String REPORT_MANAGER_RESPONDED = "ReportManagerResponded.";
         }
 
 
         public static class ERROR_STRINGS{
-            public static final String s = "";
+            public static final String NO_LOGGED_PAYMENTS_FOR_USER_X = "There are no logged payments for user: ";
         }
 
     }
@@ -123,39 +132,41 @@ public class GLOBAL_STRINGS {
     public static class ACCOUNT_SERVICE{
 
         public static class OK_STRINGS{
-            public static final String SANITITY_CHECK = "Sanitity check for account service";
+            public static final String SANITY_CHECK = "Sanity check for account service";
         }
 
 
         public static class HANDLE {
             //Handlers installed in service
-            public static final String ACCOUNT_STATUS_REQUEST = "AccountStatusRequest";
-            public static final String GET_CUSTOMER = "GetCustomer";
-            public static final String GET_MERCHANT = "GetMerchant";
-            public static final String MERCHANT_VERIFICATION_REQUESTED = "MerchantVerificationRequested";
+            public static final String ACCOUNT_STATUS_REQUESTED = "AccountStatusRequested.";
+            public static final String GET_CUSTOMER = "GetCustomer.";
+            public static final String GET_MERCHANT = "GetMerchant.";
+            public static final String MERCHANT_VERIFICATION_REQUESTED = "MerchantVerificationRequested.";
             public static final String CUSTOMER_VERIFICATION_REQUESTED = TOKEN_SERVICE.HANDLE.CUSTOMER_VERIFICATION_REQUESTED;
-            public static final String CUSTOMER_CREATION_REQUESTED = "CustomerCreationRequested";
-            public static final String MERCHANT_CREATION_REQUESTED = "MerchantCreationRequested";
-            public static final String MERCHANT_ID_TO_ACCOUNT_NUMBER_REQUEST = PAYMENT_SERVICE.PUBLISH.MERCHANT_ID_TO_ACCOUNT_NUMBER_REQUEST;
-            public static final String CUSTOMER_ID_TO_ACCOUNT_NUMBER_REQUEST = PAYMENT_SERVICE.PUBLISH.CUSTOMER_ID_TO_ACCOUNT_NUMBER_REQUEST;
+            public static final String CUSTOMER_CREATION_REQUESTED = "CustomerCreationRequested.";
+            public static final String MERCHANT_CREATION_REQUESTED = "MerchantCreationRequested.";
+            public static final String MERCHANT_ID_TO_ACCOUNT_NUMBER_REQUESTED = PAYMENT_SERVICE.PUBLISH.MERCHANT_ID_TO_ACCOUNT_NUMBER_REQUESTED;
+            public static final String CUSTOMER_ID_TO_ACCOUNT_NUMBER_REQUESTED = PAYMENT_SERVICE.PUBLISH.CUSTOMER_ID_TO_ACCOUNT_NUMBER_REQUESTED;
 
-
+            public static final String ACCOUNT_VERIFICATION_REQUESTED= "AccountVerificationRequest.";
 
 
         }
+
         public static class PUBLISH {
-            public static final String CUSTOMER_CREATION_RESPONSE = TOKEN_SERVICE.PUBLISH.CUSTOMER_CREATION_RESPONSE;
-            public static final String CUSTOMER_VERIFICATION_RESPONSE = TOKEN_SERVICE.PUBLISH.CUSTOMER_VERIFICATION_RESPONSE;
+            public static final String CUSTOMER_CREATION_RESPONDED = TOKEN_SERVICE.PUBLISH.CUSTOMER_CREATION_RESPONDED;
+            public static final String CUSTOMER_VERIFICATION_RESPONDED = TOKEN_SERVICE.PUBLISH.CUSTOMER_VERIFICATION_RESPONDED;
 
-            public static final String MERCHANT_VERIFICATION_RESPONSE = TOKEN_SERVICE.PUBLISH.MERCHANT_VERIFICATION_RESPONSE;
-            public static final String MERCHANT_CREATION_RESPONSE = TOKEN_SERVICE.PUBLISH.MERCHANT_CREATION_RESPONSE;
+            public static final String MERCHANT_VERIFICATION_RESPONDED = TOKEN_SERVICE.PUBLISH.MERCHANT_VERIFICATION_RESPONDED;
+            public static final String MERCHANT_CREATION_RESPONDED = TOKEN_SERVICE.PUBLISH.MERCHANT_CREATION_RESPONDED;
 
-            public static final String RESPONSE_CUSTOMER = TOKEN_SERVICE.PUBLISH.RESPONSE_CUSTOMER;
-            public static final String RESPONSE_MERCHANT = TOKEN_SERVICE.PUBLISH.RESPONSE_MERCHANT;
+            public static final String CUSTOMER_RESPONDED = TOKEN_SERVICE.PUBLISH.CUSTOMER_RESPONDED;
+            public static final String MERCHANT_RESPONDED = TOKEN_SERVICE.PUBLISH.MERCHANT_RESPONDED;
 
-            public static final String ACCOUNT_STATUS_RESPONSE = TOKEN_SERVICE.PUBLISH.ACCOUNT_STATUS_RESPONSE;
-            public static final String CUSTOMER_TO_ACCOUNT_NUMBER_RESPONSE = PAYMENT_SERVICE.HANDLE.CUSTOMER_TO_ACCOUNT_NUMBER_RESPONSE;
-            public static final String MERCHANT_TO_ACCOUNT_NUMBER_RESPONSE = PAYMENT_SERVICE.HANDLE.MERCHANT_TO_ACCOUNT_NUMBER_RESPONSE;
+            public static final String ACCOUNT_STATUS_RESPONDED = "AccountStatusRequested.";
+            public static final String ACCOUNT_VERIFICATION_RESPONDED= "AccountVerificationResponded.";
+            public static final String CUSTOMER_TO_ACCOUNT_NUMBER_RESPONDED = PAYMENT_SERVICE.HANDLE.CUSTOMER_TO_ACCOUNT_NUMBER_RESPONDED;
+            public static final String MERCHANT_TO_ACCOUNT_NUMBER_RESPONDED = PAYMENT_SERVICE.HANDLE.MERCHANT_TO_ACCOUNT_NUMBER_RESPONDED;
 
 
 
@@ -163,12 +174,37 @@ public class GLOBAL_STRINGS {
 
 
         public static class ERROR_STRINGS{
-            public static final String AN_ERROR_HAS_OCCURED_COULD_NOT_CREATE_MERCHANT = TOKEN_SERVICE.ERROR_STRINGS.AN_ERROR_HAS_OCCURED_COULD_NOT_CREATE_MERCHANT;
-            public static final String AN_ERROR_HAS_OCCURED_COULD_NOT_CREATE_CUSTOMER = TOKEN_SERVICE.ERROR_STRINGS.AN_ERROR_HAS_OCCURED_COULD_NOT_CREATE_CUSTOMER;
+            public static final String AN_ERROR_HAS_OCCURRED_COULD_NOT_CREATE_MERCHANT = TOKEN_SERVICE.ERROR_STRINGS.AN_ERROR_HAS_OCCURRED_COULD_NOT_CREATE_MERCHANT;
+            public static final String AN_ERROR_HAS_OCCURRED_COULD_NOT_CREATE_CUSTOMER = TOKEN_SERVICE.ERROR_STRINGS.AN_ERROR_HAS_OCCURRED_COULD_NOT_CREATE_CUSTOMER;
             public static final String NO_MERCHANT_EXISTS_WITH_THE_PROVIDED_ID= TOKEN_SERVICE.ERROR_STRINGS.NO_MERCHANT_EXISTS_WITH_THE_PROVIDED_ID;
             public static final String NO_CUSTOMER_EXISTS_WITH_THE_PROVIDED_ID=TOKEN_SERVICE.ERROR_STRINGS.NO_CUSTOMER_EXISTS_WITH_THE_PROVIDED_ID;
 
         }
+
+    }
+    public static class REST_SERVICE{
+
+        public static class OK_STRINGS{
+            public static final String SANITY_CHECK = "Sanity check for REST service";
+
+        }
+
+        public static class PUBLISH {
+            public static final String CUSTOMER_CREATION_REQUESTED = ACCOUNT_SERVICE.HANDLE.CUSTOMER_CREATION_REQUESTED;
+            public static final String TOKEN_CREATION_REQUESTED = TOKEN_SERVICE.HANDLE.TOKEN_CREATION_REQUESTED;
+            public static final String REPORT_MERCHANT_REQUESTED = REPORT_SERVICE.HANDLE.REPORT_MERCHANT_REQUESTED;
+            public static final String PAYMENT_REQUESTED = PAYMENT_SERVICE.HANDLE.PAYMENT_REQUESTED;
+
+        }
+
+        public static class HANDLE {
+            public static final String TOKEN_CREATION_RESPONDED = TOKEN_SERVICE.PUBLISH.TOKEN_CREATION_RESPONDED;
+            public static final String CUSTOMER_CREATION_RESPONDED = ACCOUNT_SERVICE.PUBLISH.CUSTOMER_CREATION_RESPONDED;
+            public static final String REPORT_MERCHANT_RESPONDED = REPORT_SERVICE.PUBLISH.REPORT_MERCHANT_RESPONDED;
+            public static final String PAYMENT_RESPONDED = PAYMENT_SERVICE.PUBLISH.PAYMENT_RESPONDED;
+            public static final String REST_STATUS_REQUESTED = "RestStatusRequested.";
+        }
+
 
     }
 
