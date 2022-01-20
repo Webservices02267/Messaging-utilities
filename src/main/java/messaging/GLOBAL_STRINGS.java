@@ -17,11 +17,13 @@ public class GLOBAL_STRINGS {
 
         public static class HANDLE {
 
+
             public static final String TOKEN_STATUS_REQUESTED = "TokenStatusRequested";
             public static final String CUSTOMER_VERIFICATION_REQUESTED = "CustomerVerificationRequested";
             public static final String TOKEN_VERIFICATION_REQUESTED = PAYMENT_SERVICE.PUBLISH.GET_CUSTOMER_ID_FROM_TOKEN_REQUESTED;
             public static final String TOKEN_VERIFICATION_RESPONDED = PAYMENT_SERVICE.HANDLE.GET_CUSTOMER_ID_FROM_TOKEN_RESPONDED;
             public static final String TOKEN_CREATION_REQUESTED = "TokenCreationRequested";
+
 
             public static final String ACCOUNT_VERIFICATION_RESPONDED= ACCOUNT_SERVICE.PUBLISH.ACCOUNT_VERIFICATION_RESPONDED;
             public static final String ACCOUNT_VERIFICATION_REQUESTED= ACCOUNT_SERVICE.HANDLE.ACCOUNT_VERIFICATION_REQUESTED;
@@ -62,8 +64,10 @@ public class GLOBAL_STRINGS {
 
 
         public static class HANDLE {
+
             public static final String PAYMENT_STATUS_REQUESTED = "PaymentStatusRequested";
             public static final String PAYMENT_REQUESTED = "PaymentRequested";
+
             public static final String MERCHANT_TO_ACCOUNT_NUMBER_RESPONDED = "MerchantIdToAccountNumberResponded.";
             public static final String GET_CUSTOMER_ID_FROM_TOKEN_RESPONDED = "GetCustomerIdFromTokenResponded.";
             public static final String CUSTOMER_TO_ACCOUNT_NUMBER_RESPONDED = "CustomerIdToAccountNumberResponded.";
@@ -71,6 +75,7 @@ public class GLOBAL_STRINGS {
 
         public static class PUBLISH {
             public static final String PAYMENT_STATUS_RESPONDED = "PaymentStatusResponded.";
+
             public static final String MERCHANT_ID_TO_ACCOUNT_NUMBER_REQUESTED = "MerchantIdToAccountNumberRequested";
             public static final String GET_CUSTOMER_ID_FROM_TOKEN_REQUESTED = "GetCustomerIdFromTokenRequested";
             public static final String CUSTOMER_ID_TO_ACCOUNT_NUMBER_REQUESTED = "CustomerIdToAccountNumberRequested";
@@ -110,8 +115,6 @@ public class GLOBAL_STRINGS {
             public static final String REPORT_MANAGER_REQUESTED = "ReportManagerRequested";
             public static final String LOG_PAYMENT_REQUESTED = "LogPaymentRequested";
 
-
-
         }
 
 
@@ -138,6 +141,7 @@ public class GLOBAL_STRINGS {
 
         public static class HANDLE {
             //Handlers installed in service
+
             public static final String ACCOUNT_STATUS_REQUESTED = "AccountStatusRequested";
             public static final String GET_CUSTOMER = "GetCustomer.";
             public static final String GET_MERCHANT = "GetMerchant.";
@@ -145,6 +149,7 @@ public class GLOBAL_STRINGS {
             public static final String CUSTOMER_VERIFICATION_REQUESTED = TOKEN_SERVICE.HANDLE.CUSTOMER_VERIFICATION_REQUESTED;
             public static final String CUSTOMER_CREATION_REQUESTED = "CustomerCreationRequested";
             public static final String MERCHANT_CREATION_REQUESTED = "MerchantCreationRequested";
+
             public static final String MERCHANT_ID_TO_ACCOUNT_NUMBER_REQUESTED = PAYMENT_SERVICE.PUBLISH.MERCHANT_ID_TO_ACCOUNT_NUMBER_REQUESTED;
             public static final String CUSTOMER_ID_TO_ACCOUNT_NUMBER_REQUESTED = PAYMENT_SERVICE.PUBLISH.CUSTOMER_ID_TO_ACCOUNT_NUMBER_REQUESTED;
 
@@ -203,6 +208,7 @@ public class GLOBAL_STRINGS {
             public static final String REPORT_MERCHANT_RESPONDED = REPORT_SERVICE.PUBLISH.REPORT_MERCHANT_RESPONDED;
             public static final String PAYMENT_RESPONDED = PAYMENT_SERVICE.PUBLISH.PAYMENT_RESPONDED;
             public static final String REST_STATUS_REQUESTED = "RestStatusRequested";
+
         }
 
 
