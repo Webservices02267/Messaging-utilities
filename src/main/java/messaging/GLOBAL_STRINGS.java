@@ -168,7 +168,7 @@ public class GLOBAL_STRINGS {
             public static final String CUSTOMER_RESPONDED = TOKEN_SERVICE.PUBLISH.CUSTOMER_RESPONDED;
             public static final String MERCHANT_RESPONDED = TOKEN_SERVICE.PUBLISH.MERCHANT_RESPONDED;
 
-            public static final String ACCOUNT_STATUS_RESPONDED = "AccountStatusResponded";
+            public static final String ACCOUNT_STATUS_RESPONDED = "AccountStatusResponded.";
             public static final String ACCOUNT_VERIFICATION_RESPONDED= "AccountVerificationResponded.";
             public static final String CUSTOMER_TO_ACCOUNT_NUMBER_RESPONDED = PAYMENT_SERVICE.HANDLE.CUSTOMER_TO_ACCOUNT_NUMBER_RESPONDED;
             public static final String MERCHANT_TO_ACCOUNT_NUMBER_RESPONDED = PAYMENT_SERVICE.HANDLE.MERCHANT_TO_ACCOUNT_NUMBER_RESPONDED;
