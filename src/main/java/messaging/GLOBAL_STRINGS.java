@@ -109,7 +109,7 @@ public class GLOBAL_STRINGS {
 
 
         public static class HANDLE {
-            public static final String REST_STATUS_REQUESTED = "ReportStatusRequested";
+            public static final String REPORT_STATUS_REQUESTED = "ReportStatusRequested";
             public static final String REPORT_CUSTOMER_REQUESTED = "ReportCustomerRequested";
             public static final String REPORT_MERCHANT_REQUESTED = "ReportMerchantRequested";
             public static final String REPORT_MANAGER_REQUESTED = "ReportManagerRequested";
@@ -119,7 +119,7 @@ public class GLOBAL_STRINGS {
 
 
         public static class PUBLISH {
-            public static final String REST_STATUS_RESPONDED = "ReportStatusResponded.";
+            public static final String REPORT_STATUS_RESPONDED = "ReportStatusResponded.";
             public static final String REPORT_CUSTOMER_RESPONDED = "ReportCustomerResponded.";
             public static final String REPORT_MERCHANT_RESPONDED = "ReportMerchantResponded.";
             public static final String REPORT_MANAGER_RESPONDED = "ReportManagerResponded.";
